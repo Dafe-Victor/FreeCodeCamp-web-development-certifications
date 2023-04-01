@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Noto Sans">
+</head>
+<body>
+
+     <h1 id="title">Survey Form</h1>
+
+     <p id="description">Please fill out this form with the required information:</p>
+
+     <form id="survey-form">
+        
+
+         <label class="text-style" id="name-label" for="first-name">Enter Your First Name:</label>
+
+         <input type="text" name="first-name" id="first-name" class="input" required placeholder="John"/>      
+
+
+
+         <label class="text-style" id="name-label" for="last-name">Enter Your Last Name: </label>
+
+         <input type="text" name="last-name" id="last-name" class="input" required placeholder="Doe"/>
+
+
+
+         <label  class="text-style" id="number-label"for="number">Input age (years):</label>
+
+         <input type="number" name="age" id="number" class="input" required placeholder="18" min="16" max="80"/>
+
+
+
+         <label class="text-style" id="email-label" for="email">Enter Your Email:</label>
+
+         <input type="email" name="email" id="email" class="input" required placeholder="JohnDoe775@yahoo.com"/>
+
+
+      
+         <p class="p-plan">Select type of plan</p>
+
+         <label for="basic"><input type="radio" name="plan" id="basic" class="plan" value="basic" /> Basic</label>   
+
+         <label for="pro"><input type="radio" name="plan" id="pro" class="plan" checked value="pro"/> Pro</label>  
+
+
+
+         <div class="exp">
+             
+         <p class="p-exp">How has it been with your experience so far?</p> 
+
+         <label for="awesome"><input type="checkbox" name="experience" id="awesome" class="plan" value="awesome" checked/> Awesome</label>
+
+         <label for="better"><input type="checkbox" name="experience" id="better"  class="plan" value="could be better" /> Could be better</label>
+
+         <label for="great"><input type="checkbox" name="experience" id="great"  class="plan" value="not too great"/> Not too great</label>
+             
+         </div>   
+
+
+
+         <label class="text-style" for="dropdown"> How did you hear about us?</label>
+
+         <select id="dropdown">
+
+         <option value="" disabled selected>Select one</option>
+
+         <option value="facebook">Facebook</option>
+
+         <option value="youtube">Youtube</option> 
+
+         <option value="forum">Forum</option>
+
+         <option value="other">Other</option>
+
+       </select>   
+
+
+
+
+       <label class="text-style" for="suggest"> Any other suggestions?</label>
+
+        <textarea id="suggest" rows="10" cols="40" placeholder="suggestions...."></textarea>
+          
+
+        <button type="submit" id="submit">Submit</button>
+
+
+     </form>
+     
+
+</body>
+</html>
