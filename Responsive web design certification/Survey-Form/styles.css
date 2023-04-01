@@ -1,0 +1,136 @@
+:root {
+    --sweet-blue:#008CFF;
+    --sweet-dark-blue:#002A4D;   
+    --calm-white:#fff;
+    --dark-knight:#000000;
+    --reality-green:#00E691;
+}
+
+*::before, *::after {
+    box-sizing:border-box; 
+}   
+
+html {
+    box-sizing:inherit;
+    margin:0;
+    scroll-behavior:smooth; 
+    line-height:1.5; 
+}
+
+body {
+    background:linear-gradient(180deg, var(--sweet-blue), var(--dark-knight));
+    color:#fff;
+    font-family:Roboto;
+    word-spacing:0.5mm;
+    padding:20px; 
+}
+
+#title, #description {
+    text-align:center;
+}
+
+#description {
+    font-size:1.2rem;
+    margin-bottom:4rem;
+}
+
+p {
+    font-size:1.1rem;
+}
+
+.p-plan, .p-exp {
+    margin-top:3rem; 
+}
+
+.exp {
+    margin-bottom:3rem;
+}
+
+#dropdown {
+    margin-bottom:1.5rem;
+}
+
+form { 
+    background-color:var(--sweet-blue);
+    padding:4rem;
+    border-radius:5px;
+    margin:0 auto; 
+    max-width:500px;
+    min-width:200px; 
+} 
+
+label {    
+    margin:1rem auto;
+    display:block;
+    font-size:1.1rem; 
+}
+
+.text-style, #description, .p-plan, .p-exp {
+    font-family:Noto Sans;
+    font-weight:bolder;
+}
+
+input, textarea, select {
+    font-size:1rem;
+    width:100%;
+}
+
+textarea {
+    resize:both;
+    max-width:88%;
+    min-width:30%;
+    max-height:200px;
+    min-height:100px;
+    padding:2rem;
+    color:var(--sweet-dark-blue);
+}
+
+select { 
+    height:1.7rem;
+    font-family:Noto sans;
+    padding-inline:0.4rem; 
+    color:var(--sweet-dark-blue);
+}
+
+.input { 
+    padding:10px;
+    border-radius:4px;
+    border:1px solid var(--calm-white); 
+    margin-bottom:1.5rem;
+} 
+
+.input:focus {
+    background-color:var(--sweet-dark-blue);
+    color:var(--calm-white);
+    border:1px solid var(--calm-white);
+    outline:0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width:1.4rem;  
+    vertical-align:middle; 
+    height:2em;
+    accent-color:var(--sweet-dark-blue);
+} 
+
+.plan { 
+    width:unset; 
+}
+
+button[type="submit"] {
+    display:block; 
+    background-color:var(--sweet-dark-blue);
+    color:var(--calm-white);
+    font-size:1.4rem;
+    margin:3rem auto; 
+    padding:15px 20px;
+    border:1px solid var(--sweet-dark-blue);
+    border-radius:3px;
+    width:70%;
+}
+
+button[type="submit"]:hover {
+    background-color:var(--reality-green);
+    color:var(--dark-knight);
+    border:none;
+}
